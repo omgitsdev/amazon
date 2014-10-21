@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :orders
 
   root 'items#home'
+
   resources :items
 
   # The priority is based upon order of creation: first created -> highest priority.
