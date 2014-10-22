@@ -1,0 +1,9 @@
+{{test}}<br>
+Your Cart:<br>
+<ul>
+  <div ng-repeat="item in items">
+    <li>{{item.item.name}} (qty: {{item.count}})</li>
+  </div>
+</ul>
+<input type="text" ng-model="name">
+<button ng-click="submitOrder(name)">Submit Order</button>

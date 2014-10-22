@@ -1,9 +1,10 @@
-  <div ng-repeat="item in items">
-    <img ng-src="{{item.url}}" /><br>
-    <strong>{{item.name}}</strong><br>
-    <em>{{item.description}}</em><br>
-    Price: ${{item.price}}<br>
-    Available stock: {{item.quantity}}<br>
-    <button ng-click="addToCard(item)">Add {{item.name}} to card </button>
-    <hr>
+<div ng-repeat="item in items">
+  <img ng-src="{{item.url}}" /><br>
+  <strong>{{item.name}}</strong><br>
+  <em>{{item.description}}</em><br>
+  Price: ${{item.price}}<br>
+  Available stock: {{item.quantity}}<br>
+  <button ng-click="addToCart(item)">Add {{item.name}} to cart</button>
+  <hr>
 </div>
+<button ng-click="checkout()">Checkout</button>
